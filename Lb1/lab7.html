@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Задание 7. Рафиков</title>
+</head>
+
+<body>
+	<script language="JavaScript">
+	
+		function kek() {
+			arr = new Array("информатика", "математика", "история", "лиратура","экономика","право");
+			document.write("<p>Массив с предметами:</p>");
+			document.write("<p>" + arr + "</p>");
+			document.write("Точные науки: " + arr.slice(0, 2) + "<br>");
+			document.write("Гуманитарные науки: " + arr.slice(2, 6) + "<br>");
+		}
+	
+	
+		year = new Array("декабрь", "январь", "февраль", "март", "апрель", "май",
+			"июнь", "июль", "август", "сентябрь", "октябрь", "ноябрь");
+		summer = new Array(); //летние месяцы
+		summer = year.slice(6, 9);
+		document.write("<p>" + summer + "</p>");
+		kek();
+	</script>
+
+
+</body>
+</html>
