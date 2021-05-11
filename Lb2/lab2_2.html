@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>KEK</title>
+</head>
+<style type="text/css">
+ .kek{
+    margin: 10px auto;
+        }
+.main_div{
+     margin: 0 auto;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+
+    function valid() {
+
+//поле имени
+        var name = $("#name").val();
+
+         if (!name) {
+         $("#message2_name").html("<font style = 'color:red'>Заполните поле имени</font> <br> ");
+        document.form.name.style.borderColor="red";
+        }
+        else{
+            $("#message2_name").html("");
+            document.form.name.style.borderColor="green";
+        }
+
+        //Email.
+        var email = $("#email").val();
+         if (!email) {
+         $("#message_email").html("<font style = 'color:red'>Заполните поле почты</font> <br> ");
+        document.form.email.style.borderColor="red";
+        }
+        else if(!email.includes('@')){
+         $("#message_email").html("<font style = 'color:red'>Поле почты должен содержать символ @</font> <br> ");
+        document.form.email.style.borderColor="red";
+        }
+        else{
+            $("#message_email").html("");
+            document.form.email.style.borderColor="green";
+        }
+
+//пароль 1        
+        var pass = $("#password").val();
+        var pass2 = $("#password2").val();
+
+         if (!pass)
+        {
+            $("#message_pass").html("<font style = 'color:red'>Заполните поле пароля</font> <br> ");
+            document.form.password.style.borderColor="red";
+        }
+        else if(pass.length<8){
+             $("#message_pass").html("<font style = 'color:red'>Пароль должен быть больше 8 символов</font> <br> ");
+            document.form.password.style.borderColor="red";           
+        }
+        else{
+            $("#message_pass").html("");
+            document.form.password.style.borderColor="green";
+        }
+
+//пароль 2 
+          if (!pass2)
+        {
+            $("#message_pass2").html("<font style = 'color:red'>Заполните 2 поле пароля</font> <br> ");
+            document.form.password2.style.borderColor="red";
+        }
+        else if (pass2!==pass){
+            $("#message_pass2").html("<font style = 'color:red'>Пароли не совпадают</font> <br> ");
+            document.form.password2.style.borderColor="red";
+        }
+        else {
+            $("#message_pass2").html("");
+            document.form.password2.style.borderColor="green";
+        }
+
+        var theme = $("#theme").val();
+
+        var message = $("#message").val();
+        if (!message) {
+            $("#message_message").html("<font style = 'color:red'>Заполните поле сообщения</font> <br> ");
+            document.form.message.style.borderColor="red";
+        }
+        else if (message.length<10) {
+             $("#message_message").html("<font style = 'color:red'>Поле сообщения должно иметь более 10 символов</font> <br> ");
+            document.form.message.style.borderColor="red";
+        }
+        else{
+            $("#message_message").html("");
+            document.form.message.style.borderColor="green";
+        }
+
+    return false;
+    }
+
+
+function kek(){
+document.form.name.style.borderColor="black";
+document.form.email.style.borderColor="black";
+document.form.password.style.borderColor="black";
+document.form.password2.style.borderColor="black";
+document.form.message.style.borderColor="black";
+$("#message2_name").html("");
+$("#message_pass").html("");
+$("#message_pass2").html("");
+$("#message_message").html("");
+$("#message_email").html("");
+}
+  
+</script>
+<body>
+    <form name="form" id="form">
+
+            <div class="main_div">
+        <div class="kek">
+            <label for="name">Имя</label><br>
+            <input type="text" name="name" id="name" placeholder="Введите имя">
+        </div>
+
+        <div class="kek">
+            <label for="email">Email</label><br>
+            <input type="email" name="email" id="email" placeholder="Введите эл.почту">
+        </div>
+
+        <div class="kek">
+            <label for="password">Пароль</label><br>
+            <input type="password" name="password" id="password" placeholder="Введите пароль">
+        </div>
+
+        <div class="kek">
+            <label for="password2">Пароль</label><br>
+            <input type="password" name="password2" id="password2" placeholder="Поддтверите пароль">
+        </div>
+
+    <div class="kek">
+         <label for="theme">Тема сообщения</label><br>
+        <input type="text" id="theme" name="theme" placeholder="Введите тему сообщения" />
+    </div>
+
+    <div class="kek">
+        <label for="message">Сообщение</label><br>
+        <textarea type="text" id="message" name="message" placeholder="Введите сообщение" /></textarea>
+    </div>
+
+    <div class="kek">
+
+  <input type="button" id="done" onclick="valid()" value="Отправить">
+
+    <input type="reset" onclick="kek()" value="Очистить форму"  >
+
+<br><br>
+<span id="message2_name"></span> 
+<span id="message_pass"></span>  
+<span id="message_pass2"></span>  
+<span id="message_message"></span>  
+<span id="message_email"></span>  
+
+</form>
+
+
+</body>
+</html>

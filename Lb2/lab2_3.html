@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>задание 3. Рафиков</title>
+</head>
+
+<style type="text/css">
+	#bl{
+		position: absolute;
+		top: 100px;
+		left: 50px;
+	}
+	#br{
+		position: absolute;
+		top: 100px;
+		left: 250px;
+
+	}
+	#bu{
+		position: absolute;
+		top: 20px;
+		left: 150px;
+
+	}	
+	#bd{
+		position: absolute;
+		top: 100px;
+		left: 150px;
+	}
+
+
+</style>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+</script>
+<body>
+
+
+</body>
+</html>
+
+
+
+<script type="text/javascript">
+$(function() {
+$(window).scroll(function() {
+if($(this).scrollTop() != 0) {
+$('#toTop').fadeIn();
+} else { 
+$('#toTop').fadeOut();
+}
+});
+$('#toTop').click(function() {
+$('body,html').animate({scrollTop:0},800);
+});
+}); 
+</script>
+    <head>
+
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <script language="JavaScript"> 
+
+	    function left(){
+	    $("#naruto").css("position", "relative");
+	    $("#naruto").animate({right: "+=100px", 'width': '-=0px'}, 100);}
+	    function right(){
+	    $("#naruto").css("position", "relative");
+	    $("#naruto").animate({right: "-=100px", 'width': '-=0px'}, 100);}
+	    function up(){
+	    $("#naruto").css("position", "relative");
+	    $("#naruto").animate({top: "-=100px", 'height': '-=0px'}, 100);}
+	    function down(){
+	    $("#naruto").css("position", "relative");
+	    $("#naruto").animate({top: "+=100px", 'height': '-=0px'}, 100);}
+    </script>
+    </head>
+<body>
+
+<button id="bl" type="button" onClick="left()"><img id="left" src="left.png" height="50" width="50"/></button>
+<button id="br" type="button" onClick="right()"><img id="right" src="right.png" height="50" width="50"/></button>
+<button id="bu" type="button" onClick="up()"><img id="up" src="up.png" height="50" width="50"/></button>
+<button id="bd" type="button" onClick="down()"><img id="down" src="down.png" height="50" width="50"/></button>
+
+<p><img id="naruto" src="naruto.jpg" height="400" width="400" style="margin:200px"></img></p>
+</form></p>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Задание 6.Рафиков</title>
+</head>
+<style type="text/css">
+	body{
+		margin: 10px;
+		background-color: #FF6347;
+	}
+	#kek{
+		position: absolute;
+		left: 320px;
+		top: 100px;
+		width: 700px;
+		height: 500px;
+	}
+</style>
+
+<body>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+<h3>Кто джинчурики девятихвостого?</h3>
+
+<form>
+	<p>Выберите:</p>
+<div>
+<button id="1">Хан</button>
+<label id="label1"></label>        		
+</div>
+
+<div>
+<br><button id="2">Фуу</button>
+
+<label id="label2"></label>
+</div>
+
+<div>
+<br><button id="3">Наруто</button>
+
+<label id="label3"></label>
+</div>   
+<div>
+<br><button id="4">Утаката</button>
+
+<label id="label4"></label>
+</div>
+
+<br>
+<output id="p1" type="text" name="1" ></output><br>
+<output id="p2" type="text" name="2" readonly></output><br>
+<output id="p3" type="text" name="3" readonly></output><br>
+<output id="p4" type="text" name="4" readonly></output><br>
+<img src="https://pbs.twimg.com/media/DJX8lbcWAAAsUJb.jpg" id="kek">
+</form>
+
+<button id="button">Отправить</button>
+
+<script type="text/javascript">
+var a = 0;
+var b = 0;
+var c = 0;
+var d = 0;
+var sum = 0;
+$(document).ready(function(){
+$("#button").click(function(){
+document.getElementById("p1").value = ((a/sum)*100).toFixed(2)+"%";
+document.getElementById("p2").value = ((b/sum)*100).toFixed(2)+"%";
+document.getElementById("p3").value = ((c/sum)*100).toFixed(2)+"%";
+document.getElementById("p4").value = ((d/sum)*100).toFixed(2)+"%";
+});
+$("#1").click(function(){
+a +=1;
+sum +=1;
+$("#label1").text("Количество: "+a);
+return false; });
+$("#2").click(function(){
+b +=1;
+sum +=1;
+$("#label2").text("Количество: "+b);
+return false; });
+$("#3").click(function(){
+c +=1;
+sum +=1;
+$("#label3").text("Количество: "+c);
+return false; });
+$("#4").click(function(){
+d +=1;
+sum +=1;
+$("#label4").text("Количество: "+d);
+return false; });
+});
+</script>
+</body>
+</html>
