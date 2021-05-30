@@ -14,3 +14,5 @@
 <li><a href="Lb1/laba1main.html">Лабораторная работа 1 </a></li>
 <li><a href="Lb2/lab2main.html">Лабораторная работа 2 </a></li>
 <li><a href="lab3/index.html">Лабораторная работа 3 </a></li>
+<li><a href="lab4/index.html">Лабораторная работа 4 </a></li>
+<li><a href="lab5/index.html">Лабораторная работа 5 </a></li>
