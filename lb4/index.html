@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Рафиков ПИ-319 Вакансии
+        </title>
+        <noscript>
+            Включите js!
+        </noscript>
+        <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+        <script crossorigin src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+        <link href="src/api/bootstrap.min.css" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="src/api/moment-with-locales.js"></script>
+        <style>
+.image{
+    object-fit: scale-down;
+}
+.bg-primary{
+    background-color: #fd7e14 !important;
+}
+.border-primary {
+    border-color: #fd7e14 !important;
+}
+.btn-primary {
+    background-color: #fd7e14 !important;
+    border-color: #fd7e14 !important;
+}
+        </style>
+    </head>
+    <body>
+        <div class="root" id="root">
+            <script type="text/babel" src="src/components/State/LoadingApp.jsx"></script>
+            <script type="text/babel" src="src/components/State/ErrorApp.jsx"></script>
+            <script type="text/babel" src="src/components/App/App.jsx"></script>
+            <script type="text/babel" src="src/components/Header/HeaderApp.jsx"></script>
+            <script type="text/babel" src="src/components/Content/ContentApp.jsx"></script>
+            <script type="text/babel" src="src/components/Footer/FooterApp.jsx"></script>
+            <script type="text/babel" src="src/components/Nav.jsx"></script>
+            <script type="text/babel" src="src/components/AccordionApp.jsx"></script>
+            <script type="text/babel" src="src/components/ModalApp.jsx"></script>
+            <script type="text/babel" src="src/components/AlertApp.jsx"></script>
+            <script type="text/babel" src="src/components/DatePickerApp.jsx"></script>
+            <script type="text/babel">
+                ReactDOM.render(<App />, document.getElementById("root"))
+            </script>
+        </div>
+    </body>
+</html>

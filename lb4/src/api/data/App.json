@@ -1,0 +1,64 @@
+{
+    "accordion":[
+        {
+            "id": 0,
+            "title": "Frontend developer",
+            "values":[
+                {
+                "id": 0,
+                "value": "Требуемый опыт работы: 3–6 лет. Полная занятость, полный день",
+                "image": "src/image/img1.jpg",
+                "price": "21000"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "Backend developer",
+            "values":[
+                {
+                "id": 0,
+                "value": "Требуемый опыт работы: не требуется. Полная занятость, полный день",
+                "image": "src/image/img1.jpg",
+                "price": "22000"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Fullstack developer",
+            "values":[
+                {
+                "id": 0,
+                "value": "Требуемый опыт работы: 3–6 лет. Полная занятость, полный день",
+                "image": "src/image/img1.jpg",
+                "price": "18000"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Data science",
+            "values":[
+                {
+                "id": 0,
+                "value": "Требуемый опыт работы: 3–6 лет. Полная занятость, полный день",
+                "image": "src/image/img1.jpg",
+                "price": "25000"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "title": "1C developer",
+            "values":[
+                {
+                "id": 0,
+                "value": "Требуемый опыт работы: более 6 лет. Полная занятость, полный день",
+                "image": "src/image/img1.jpg",
+                "price": "120000"
+                }
+            ]
+        }
+    ]
+}
