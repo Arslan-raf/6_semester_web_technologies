@@ -1,0 +1,175 @@
+body,
+pre {
+  font-family: sans-serif;
+}
+
+.rollButton,
+.rollResult {
+  font-size: 20px;
+}
+
+.rollButton {
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.rollResult {
+  margin-left: 30px;
+}
+
+.roll {
+
+  position: relative;
+  top: 200px;
+}
+.rollc {
+
+  position: relative;
+  top: 200px;
+}
+
+.RightFace,
+.LeftFace,
+.TopFace>div {
+
+  display: flex;
+  font-family: Arial, sans-serif;
+  font-size: 30px;
+  padding: 10px;
+  width: 180px;
+  height: 180px;
+  background-color: red;
+}
+
+.RightFace,
+.LeftFace,
+.TopFace {
+  position: absolute;
+  border: 1px white solid;
+}
+
+.LeftFace {
+  -webkit-transform: skewY(30deg);
+  -moz-transform: skewY(30deg);
+  transform: skewY(30deg);
+  background-color: #eb0000;
+}
+
+.RightFace {
+  -webkit-transform: skewY(-30deg);
+  -moz-transform: skewY(-30deg);
+  transform: skewY(-30deg);
+  left: 200px;
+  background-color: #d70000;
+}
+
+.TopFace {
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  transform: rotate(60deg);
+  top: -158px;
+  left: 100px;
+}
+
+.TopFace>div {
+  -webkit-transform: skewY(-30deg) scaleY(1.16);
+  -moz-transform: skewY(-30deg) scaleY(1.16);
+  transform: skewY(-30deg) scaleY(1.16);
+}
+
+/* Set global styles for .face-# */
+
+[class^="face"] {
+  padding: 4px;
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.row {
+    --bs-gutter-x: 0;
+    --bs-gutter-y: 0;
+}
+
+.face-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.face-2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-2 .pip:nth-of-type(2) {
+  align-self: flex-end;
+}
+
+
+.face-3 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-3 .pip:nth-of-type(2) {
+  align-self: center;
+}
+
+.face-3 .pip:nth-of-type(3) {
+  align-self: flex-end;
+}
+
+
+.face-4,
+.face-6 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-4 .column,
+.face-6 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Set styles for faces with 5 pips */
+
+.face-5 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.face-5 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.face-5 .column:nth-of-type(2) {
+  justify-content: center;
+}
+
+/* Style the pip */
+
+.pip {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin: 4px;
+  background-color: white;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
